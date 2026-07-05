@@ -2,9 +2,9 @@
 
 **Safety-certificate collision checking cuts RRT node-sampling runtime by 6× for obstacle-free multi-robot industrial path planning.**
 
-▶ [**Watch the demo video**](./video.mp4) · 📄 [**Project report (PDF)**](./Report.pdf) · 🎞 [**Slides (PPTX)**](./PPT.pptx)
+📄 [**Report — view in browser**](https://docs.google.com/viewer?url=https%3A%2F%2Fraw.githubusercontent.com%2FLokesh97Bansal%2FPath-Planning-with-RRT-with-Safety-Certification-and-APF%2Fmain%2FReport.pdf) · 🎞 [**Slides — view in browser**](https://docs.google.com/viewer?url=https%3A%2F%2Fraw.githubusercontent.com%2FLokesh97Bansal%2FPath-Planning-with-RRT-with-Safety-Certification-and-APF%2Fmain%2FSlides.pdf) · 🎬 [Full-quality video (MP4)](./video.mp4) · [PPTX](./PPT.pptx)
 
-![Result](./featured.PNG)
+![Demo](./preview.gif)
 
 ## Overview
 Sampling-based planners such as RRT spend most of their runtime on collision checking. This project modifies RRT with **safety certificates** — regions around sampled states that are provably collision-free — so that many candidate nodes can be accepted or rejected without a fresh collision query. The planner generates obstacle-free paths for an assembly of industrial robots moving to a static goal among static obstacles; a Dijkstra pass extracts the optimized path over the resulting tree.
